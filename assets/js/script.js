@@ -18,14 +18,15 @@ button.addEventListener('click', function(){
 })
 
 // nav bg white on scroll
+var header = document.querySelector('header');
 window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
     if(scroll > 30){
-        document.querySelector('nav').classList.add('bg-white');
-        document.querySelector('nav').classList.add('shadow');
+        header.classList.add('bg-white');
+        header.classList.add('shadow');
     }
     else{
-        document.querySelector('nav').classList.remove('bg-white');
-        document.querySelector('nav').classList.remove('shadow');
+        header.classList.remove('bg-white');
+        header.classList.remove('shadow');
     }
 });

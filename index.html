@@ -10,39 +10,69 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="font-nunito bg-light text-dark">
-    <nav class="grid grid-cols-12 gap-3 items-center justify-between p-3 w-full fixed max-w-[1280px] mx-auto inset-x-0 top-0 z-50">
-        <div class="col-span-2 md:col-span-4">
-            <ul class="navlist flex flex-col gap-3 w-full h-screen absolute bg-white top-[70px] left-[-100%] transition-all  lg:static lg:bg-transparent lg:flex-row lg:w-fit lg:h-fit ">
-                <li class="border-b p-3 lg:border-b-0 lg:px-2 lg:py-1 relative after:absolute after:bottom-0 after:left-[-100%] after:h-[5px] after:bg-primary after:w-full after:hover:left-0  after:transition-all overflow-hidden"><a href="#">Home</a></li>
-                <li class="border-b p-3 lg:border-b-0 lg:px-2 lg:py-1 relative after:absolute after:bottom-0 after:left-[-100%] after:h-[5px] after:bg-primary after:w-full after:hover:left-0  after:transition-all overflow-hidden"><a href="#">About</a></li>
-                <li class="border-b p-3 lg:border-b-0 lg:px-2 lg:py-1 relative after:absolute after:bottom-0 after:left-[-100%] after:h-[5px] after:bg-primary after:w-full after:hover:left-0  after:transition-all overflow-hidden"><a href="#">Services</a></li>
-                <li class="border-b p-3 lg:border-b-0 lg:px-2 lg:py-1 relative after:absolute after:bottom-0 after:left-[-100%] after:h-[5px] after:bg-primary after:w-full after:hover:left-0  after:transition-all overflow-hidden"><a href="#">Contact</a></li>
-            </ul>
-            <button class="navtoggler px-2 py-1 rounded uppercase font-semibold text-2xl block lg:hidden"><i class="fa-solid fa-bars"></i></button>
-        </div>
-        <div class="col-span-7 md:col-span-4 text-center">
-            <a href="#" class="logo uppercase text-primary font-bold text-xl tracking-[0.2rem] md:text-2xl md:tracking-[0.3rem]">pawfection</a>
-        </div>
-        <div class="col-span-3 md:col-span-4 text-right">
-            <a href="#" class="bg-primary px-3 py-1 rounded-full uppercase text-sm border-2 border-primary font-semibold hover:bg-dark hover:text-primary transition-all md:px-6 md:py-2 md:border-4">book</a>
-        </div>
-    </nav>
+    <header class="w-full fixed inset-x-0 top-0 z-50">
+        <nav class="grid grid-cols-12 gap-3 items-center justify-between p-3 max-w-[1280px] mx-auto">
+            <div class="col-span-2 md:col-span-4">
+                <ul class="navlist flex flex-col gap-3 w-full h-screen absolute bg-white top-[70px] left-[-100%] transition-all  lg:static lg:bg-transparent lg:flex-row lg:w-fit lg:h-fit ">
+                    <li class="border-b p-3 lg:border-b-0 lg:px-2 lg:py-1 relative after:absolute after:bottom-0 after:left-[-100%] after:h-[5px] after:bg-primary after:w-full after:hover:left-0  after:transition-all overflow-hidden"><a href="#">Home</a></li>
+                    <li class="border-b p-3 lg:border-b-0 lg:px-2 lg:py-1 relative after:absolute after:bottom-0 after:left-[-100%] after:h-[5px] after:bg-primary after:w-full after:hover:left-0  after:transition-all overflow-hidden"><a href="#">About</a></li>
+                    <li class="border-b p-3 lg:border-b-0 lg:px-2 lg:py-1 relative after:absolute after:bottom-0 after:left-[-100%] after:h-[5px] after:bg-primary after:w-full after:hover:left-0  after:transition-all overflow-hidden"><a href="#">Services</a></li>
+                    <li class="border-b p-3 lg:border-b-0 lg:px-2 lg:py-1 relative after:absolute after:bottom-0 after:left-[-100%] after:h-[5px] after:bg-primary after:w-full after:hover:left-0  after:transition-all overflow-hidden"><a href="#">Contact</a></li>
+                </ul>
+                <button class="navtoggler px-2 py-1 rounded uppercase font-semibold text-2xl block lg:hidden"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="col-span-7 md:col-span-4 text-center">
+                <a href="#" class="logo uppercase text-primary font-bold text-xl tracking-[0.2rem] md:text-2xl md:tracking-[0.3rem]">pawfection</a>
+            </div>
+            <div class="col-span-3 md:col-span-4 text-right">
+                <a href="#" class="bg-primary px-3 py-1 rounded-full uppercase text-sm border-2 border-primary font-semibold hover:bg-dark hover:text-primary transition-all md:px-6 md:py-2 md:border-4">book</a>
+            </div>
+        </nav>
+    </header>
 
     <main class="mt-[60px]">
         <!-- Hero Section -->
-        <section class="pt-10 max-w-[1280px] mx-auto p-3">
+        <section class="py-10 max-w-[1280px] mx-auto p-3">
             <div class="text-center max-w-[500px] sm:max-w-[800px] mx-auto">
                 <h1 class="text-3xl sm:text-5xl text-center uppercase">Where your pet is our priority</h1>
                 <p class="my-3 flex items-center gap-2 justify-center"><i class="fa-solid fa-circle text-[8px]"></i> <span>Scroll to Discover</span> <i class="fa-solid fa-circle text-[8px]"></i></p>
                 <div class="my-8 relative max-w-[300px] mx-auto">
-                    <img src="assets/images/hero.jpg" alt="Pawfection - A dog wash" class="rounded-full mx-auto max-w-[300px]">
+                    <img src="assets/images/hero.jpg" alt="Pawfection - A pet wash" class="rounded-full mx-auto max-w-[300px]">
                     <h2 class="text-4xl uppercase text-center -mt-10 mix-blend-difference text-white">Woof! <br/> A doggie wash </h2>
                     <img src="assets/images/kite.png" alt="" class="max-w-[20px] absolute top-0 right-[20px]">
-                    <img src="assets/images/kite.png" alt="" class="max-w-[20px] absolute left-[20px] bottom-[80px]">
+                    <img src="assets/images/kite.png" alt="" class="max-w-[20px] absolute left-0 bottom-[80px]">
                 </div>
-                <p class="mx-auto max-w-[600px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros,
-                    pellentesque nec tempor eu, sollicitudin at dolor. Cras commodo venenatis diam,
-                    nec venenatis massa auctor at</p>
+                <p class="mx-auto max-w-[600px] tracking-wider text-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, pellentesque nec tempor eu, sollicitudin at dolor. Cras commodo venenatis diam, nec venenatis massa auctor at</p>
+            </div>
+        </section>
+
+        <!-- Discover Section -->
+        <section class="p-3 py-10 grid grid-cols-2 gap-8 max-w-[1080px] mx-auto items-center">
+            <div class="col-span-2 md:col-span-1 md:order-none order-2">
+                <h2 class="text-4xl font-bold uppercase">We treat your pet as a family member</h2>
+                <p class="tracking-wider text-lg leading-relaxed my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, pellentesque nec tempor eu, sollicitudin at dolor. Cras commodo venenatis diam, nec venenatis massa auctor at</p>
+                <a href="#" class="bg-primary rounded-full uppercase px-6 py-3 border-4 border-primary font-semibold hover:bg-dark hover:text-primary transition-all">discover</a>
+            </div>
+            <div class="col-span-2 md:col-span-1 md:order-none order-1 relative">
+                <img src="assets/images/washing-pet-dog.png" alt="Discover" class="rounded-full max-full">
+                <img src="assets/images/kite.png" alt="" class="max-w-[20px] md:max-w-[40px] absolute bottom-0 left-0">
+                <img src="assets/images/scribble.png" alt="" class="max-w-[20px] md:max-w-[40px] absolute top-0 right-0">
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-10 p-3 max-w-[1024px] mx-auto grid grid-cols-6 justify-between gap-3">
+            <div class="col-span-12 md:col-span-2 group flex items-center justify-center flex-col gap-3 p-5 rounded-lg hover:bg-white  hover:shadow-lg transition-all">
+                <img src="assets/images/Cat.png" alt="Pawdicure" class="max-h-[150px] group-hover:scale-110 transition-all">
+                <h4 class="font-bold text-xl group-hover:text-primary transition-all">Pawdicure</h4>
+            </div>
+            <div class="col-span-12 md:col-span-2 group flex items-center justify-center flex-col gap-3 p-5 rounded-lg hover:bg-white  hover:shadow-lg transition-all">
+                <img src="assets/images/spa.png" alt="Spa Baths" class="max-h-[150px] group-hover:scale-110 transition-all">
+                <h4 class="font-bold text-xl group-hover:text-primary transition-all">Spa Baths</h4>
+            </div>
+            <div class="col-span-12 md:col-span-2 group flex items-center justify-center flex-col gap-3 p-5 rounded-lg hover:bg-white  hover:shadow-lg transition-all">
+                <img src="assets/images/haircut.png" alt="Haircut of Choice" class="max-h-[150px] group-hover:scale-110 transition-all">
+                <h4 class="font-bold text-xl group-hover:text-primary transition-all">Haircut of Choice</h4>
             </div>
         </section>
     </main>
