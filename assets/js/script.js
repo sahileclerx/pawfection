@@ -30,3 +30,11 @@ window.addEventListener("scroll", (event) => {
         header.classList.remove('shadow');
     }
 });
+
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swpr-btn-nxt",
+      prevEl: ".swpr-btn-prev",
+    },
+  });
