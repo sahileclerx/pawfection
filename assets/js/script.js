@@ -37,4 +37,7 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swpr-btn-nxt",
       prevEl: ".swpr-btn-prev",
     },
-  });
+});
+
+// AOS
+AOS.init();
