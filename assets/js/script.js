@@ -39,5 +39,17 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+// Parallax Elements move
+document.addEventListener("mousemove", parallax);
+const elem = document.querySelectorAll(".parallax");
+function parallax(e) {
+    let _mouseX = e.clientX;
+    let _mouseY = e.clientY;
+    elem.forEach((el) => {
+        el.classList.add('transition-all', 'ease-linear', 'duration-0');
+        el.style.transform = `translateX(-${_mouseX / 100 *5}px) translateY(-${_mouseY / 100 *5}px)`;
+    })
+}
+
 // AOS
 AOS.init();
