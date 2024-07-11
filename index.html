@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="font-nunito bg-light text-dark">
+    <div id="cursor" class="fixed h-[20px] w-[20px] bg-[#333] rounded-full z-[100] will-change-[transform] pointer-events-none mix-blend-difference"></div>
     <header class="w-full fixed inset-x-0 top-0 z-50">
         <nav class="grid grid-cols-12 gap-3 items-center justify-between p-3 max-w-[1280px] mx-auto">
             <div class="col-span-2 md:col-span-4">
@@ -24,10 +25,10 @@
                 <button class="navtoggler px-2 py-1 rounded uppercase font-semibold text-2xl block lg:hidden"><i class="fa-solid fa-bars"></i></button>
             </div>
             <div class="col-span-7 md:col-span-4 text-center">
-                <a href="#" class="logo uppercase text-primary font-bold text-xl tracking-[0.2rem] md:text-2xl md:tracking-[0.3rem] hover:tracking-[0.5rem] hover:text-dark transition-all">pawfection</a>
+                <a href="#" class="logo block overflow-hidden uppercase text-primary font-bold text-xl tracking-[0.2rem] md:text-2xl md:tracking-[0.3rem] hover:tracking-[0.5rem] hover:text-dark transition-[letter-spacing]">pawfection</a>
             </div>
-            <div class="col-span-3 md:col-span-4 text-right">
-                <a href="#" class="bg-primary px-3 py-1 rounded-full uppercase text-sm border-2 border-primary font-semibold hover:bg-dark hover:text-primary transition-all md:px-6 md:py-2 md:border-4">book</a>
+            <div class="cta col-span-3 md:col-span-4 text-right">
+                <a href="#" class="bg-primary px-3 py-1 rounded-full uppercase text-sm border-2 border-primary font-semibold hover:bg-dark hover:text-primary transition-colors md:px-6 md:py-2 md:border-4">book</a>
             </div>
         </nav>
     </header>
@@ -36,15 +37,15 @@
         <!-- Hero Section -->
         <section class="py-10 max-w-[1280px] mx-auto p-3">
             <div class="text-center max-w-[500px] sm:max-w-[800px] mx-auto">
-                <h1 class="text-3xl sm:text-5xl text-center uppercase">Where your pet is our priority</h1>
-                <p class="my-3 flex items-center gap-2 justify-center animate-bounce" data-aos-delay="1000"><i class="fa-solid fa-circle-arrow-down text-[12px]"></i> <span>Scroll Down to Discover</span> <i class="fa-solid fa-circle-arrow-down text-[12px]"></i></p>
-                <div class="my-8 relative max-w-[300px] mx-auto">
-                    <img src="assets/images/hero.jpg" id="parallax" alt="Pawfection - A pet wash" class="rounded-full mx-auto max-w-[300px] relative">
-                    <h2 class="text-4xl uppercase text-center -mt-10 mix-blend-difference text-white">Woof! <br/> A doggie wash </h2>
+                <h1 class="text-3xl sm:text-5xl text-center uppercase overflow-hidden">Where your pet is our priority</h1>
+                <p class="scroll my-3 flex items-center gap-2 justify-center animate-bounce"><i class="fa-solid fa-circle-arrow-down text-[12px]"></i> <span>Scroll Down to Discover</span> <i class="fa-solid fa-circle-arrow-down text-[12px]"></i></p>
+                <div class="image my-8 relative max-w-[300px] mx-auto">
+                    <img src="assets/images/hero.jpg" alt="Pawfection - A pet wash" class="rounded-full mx-auto max-w-[300px] relative">
+                    <h2 class="text-4xl uppercase text-center">Woof! <br/> A doggie wash </h2>
                     <img src="assets/images/kite.png" alt="" class="max-w-[20px] absolute top-0 right-[20px] parallax">
                     <img src="assets/images/kite.png" alt="" class="max-w-[20px] absolute left-0 bottom-[80px] parallax">
                 </div>
-                <p class="mx-auto max-w-[600px] tracking-wider text-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, pellentesque nec tempor eu, sollicitudin at dolor. Cras commodo venenatis diam, nec venenatis massa auctor at</p>
+                <p class="text mx-auto max-w-[600px] tracking-wider text-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, pellentesque nec tempor eu, sollicitudin at dolor. Cras commodo venenatis diam, nec venenatis massa auctor at</p>
             </div>
         </section>
 
@@ -79,16 +80,16 @@
         </section>
 
         <!-- Showcase Section -->
-        <section class="py-10 p-3 max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-6 md:grid-rows-2 gap-2 lg:gap-6 relative">
-            <div class="col-span-1 md:col-start-1 md:col-end-2 md:row-span-2 flex items-center"><img src="assets/images/showcase-2.png" alt="" class="max-w-full" data-aos="fade-up" data-aos-delay="100"></div>
-            <div class="col-span-1 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"><img src="assets/images/showcase-7.png" alt="" class="max-w-full" data-aos="fade-up" data-aos-delay="200"></div>
-            <div class="col-span-1 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3"><img src="assets/images/showcase-8.png" alt="" class="max-w-full" data-aos="fade-up" data-aos-delay="300"></div>
-            <div class="col-span-1 md:col-start-3 md:col-end-4 md:row-start-2 md:row-end-3"><img src="assets/images/showcase-5.png" alt="" class="max-w-full" data-aos="fade-up" data-aos-delay="400"></div>
-            <div class="col-span-1 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-2"><img src="assets/images/showcase-3.png" alt="" class="max-w-full" data-aos="fade-up" data-aos-delay="500"></div>
-            <div class="col-span-1 md:col-start-4 md:row-span-2 flex items-center"><img src="assets/images/showcase-9.png" alt="" class="max-w-full" data-aos="fade-up" data-aos-delay="600"></div>
-            <div class="col-span-1 md:col-start-5 md:col-end-6 md:row-start-1 md:row-end-2"><img src="assets/images/showcase-4.png" alt="" class="max-w-full" data-aos="fade-up" data-aos-delay="700"></div>
-            <div class="col-span-1 md:col-start-5 md:col-end-6 md:row-start-2 md:row-end-3"><img src="assets/images/showcase-6.png" alt="" class="max-w-full" data-aos="fade-up" data-aos-delay="800"></div>
-            <div class="col-span-1 md:col-start-6 md:col-end-7 md:row-span-2 flex items-center"><img src="assets/images/showcase-1.png" alt="" class="max-w-full" data-aos="fade-up" data-aos-delay="900"></div>
+        <section class="showcase py-10 p-3 max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-6 md:grid-rows-2 gap-2 lg:gap-6 relative">
+            <div class="col-span-1 md:col-start-1 md:col-end-2 md:row-span-2 flex items-center"><img src="assets/images/showcase-2.png" alt="" class="max-w-full"></div>
+            <div class="col-span-1 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"><img src="assets/images/showcase-7.png" alt="" class="max-w-full"></div>
+            <div class="col-span-1 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3"><img src="assets/images/showcase-8.png" alt="" class="max-w-full"></div>
+            <div class="col-span-1 md:col-start-3 md:col-end-4 md:row-start-2 md:row-end-3"><img src="assets/images/showcase-5.png" alt="" class="max-w-full"></div>
+            <div class="col-span-1 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-2"><img src="assets/images/showcase-3.png" alt="" class="max-w-full"></div>
+            <div class="col-span-1 md:col-start-4 md:row-span-2 flex items-center"><img src="assets/images/showcase-9.png" alt="" class="max-w-full"></div>
+            <div class="col-span-1 md:col-start-5 md:col-end-6 md:row-start-1 md:row-end-2"><img src="assets/images/showcase-4.png" alt="" class="max-w-full"></div>
+            <div class="col-span-1 md:col-start-5 md:col-end-6 md:row-start-2 md:row-end-3"><img src="assets/images/showcase-6.png" alt="" class="max-w-full"></div>
+            <div class="col-span-1 md:col-start-6 md:col-end-7 md:row-span-2 flex items-center"><img src="assets/images/showcase-1.png" alt="" class="max-w-full"></div>
             <div class="hidden lg:block">
                 <img src="assets/images/kite.png" alt="" class="absolute top-[50px] left-[150px] max-w-[30px] parallax">
                 <img src="assets/images/kite.png" alt="" class="absolute bottom-[100px] right-[400px] max-w-[20px] parallax">
@@ -239,6 +240,8 @@
             <a href="#" class="hover:underline">Copyright Dotcreativemarket </a><a href="#" class="hover:underline">Terms of Use</a><a href="#" class="hover:underline">Privacy Policy</a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
